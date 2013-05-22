@@ -1,19 +1,20 @@
 {
-  "name": "ical.js",
+  "name": "mocha-benchmark",
   "version": "0.0.1",
-  "author": "",
-  "description": "",
-  "main": "lib/index.js",
+  "author": "James Lal [:lightsofapollo]",
+  "description": "Hacky mocha + benchmark js integration extracted from ICAL.js",
+  "main": "mocha_benchmark.js",
 
   "keywords": [
-    ""
+    "test",
+    "mocha",
+    "benchmark"
   ],
   "dependencies" : {},
   "devDependencies": {
     "mocha": "~1.7",
     "test-agent": "~0.12",
-    "benchmark": "~1.0",
-    "assert": "~0.4"
+    "benchmark": "~1.0"
   },
   "license": "MIT",
   "engine": {
