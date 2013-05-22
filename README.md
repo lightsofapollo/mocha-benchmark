@@ -40,9 +40,20 @@ perf.suite('libGlobal', function(perf, libGlobal) {
 
 ## Development
 
-Note- we don't have normal tests just use the library to test some fake
-tests to see if it works.
+```sh
+npm install .
+```
 
+### For node
+
+just run `npm test`
+
+### For the browser
+
+ - start server `make test-server`
+ - go to: localhost:8789/test-agent/
+ - run `make test-browser` 
+ 
 ## License
 
 The MIT License (MIT)
