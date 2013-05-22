@@ -28,12 +28,12 @@ perf.suite('libGlobal', function(perf, libGlobal) {
   perf.test('my lib should be fast', function() {
     libGlobal.doStuff();
   });
-});
-
-// perf.compareSuite will run each version in versions
-perf.compareSuite('do stuff', function(perf, globalLib) {
-  perf.test('thing', function() {
-    // will be run for each version
+  
+  // all tests inside compare run for each version
+  perf.compare(function(perf, libGlobal) {
+    perf.test('my lib should be faster', function() {
+      // libGlobal will be previous then latest
+    });
   });
 });
 ```
