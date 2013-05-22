@@ -1,5 +1,4 @@
 # Mocha + Benchmark integration
----
 
 Designed as a simple wrapper around benchmark.js.
 The initial design in ICAL.js was intended to let us test multiple
@@ -20,7 +19,6 @@ var perf = require('mocha-benchmark')({
   ],
   /* could be describe */
   suite: suite,
-
   /* or it */
   test: test,
 });
@@ -33,7 +31,6 @@ perf.suite('libGlobal', function(perf, libGlobal) {
 });
 
 // perf.compareSuite will run each version in versions
-
 perf.compareSuite('do stuff', function(perf, globalLib) {
   perf.test('thing', function() {
     // will be run for each version
