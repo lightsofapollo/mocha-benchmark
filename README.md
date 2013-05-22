@@ -10,7 +10,7 @@ performance gains between versions.
 ```js
 /* we often use tdd mocha adapters so those are the defaults */
 
-var perf = require('mocha-benchmark')({
+var perf = require('mocha-benchmark').create({
   Benchmark: Benchmark || require('benchmark')
   versions: [
     /* order can be important when we introduce test failing options */
@@ -37,6 +37,11 @@ perf.compareSuite('do stuff', function(perf, globalLib) {
   });
 });
 ```
+
+## Development
+
+Note- we don't have normal tests just use the library to test some fake
+tests to see if it works.
 
 ## License
 

@@ -1,0 +1,26 @@
+{
+  "name": "ical.js",
+  "version": "0.0.1",
+  "author": "",
+  "description": "",
+  "main": "lib/index.js",
+
+  "keywords": [
+    ""
+  ],
+  "dependencies" : {},
+  "devDependencies": {
+    "mocha": "~1.7",
+    "test-agent": "~0.12",
+    "benchmark": "~1.0",
+    "assert": "~0.4"
+  },
+  "license": "MIT",
+  "engine": {
+    "node": ">=0.4"
+  },
+
+  "scripts": {
+    "test": "make test-node"
+  }
+}
